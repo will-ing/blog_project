@@ -1,10 +1,10 @@
 from django.db import models
 
-# Create your models here.
 
-
-class blog(models.Model):
-    name = models.CharField(max_length=64)
+class Blog(models.Model):
+    title = models.CharField(max_length=64)
+    author = models.ForeignKey('auth.user', on_delete=models.CASCADE)
+    body = models.TextField(max_length=64)
 
     def __str__(self):
-        return self.name
+        return self.title
