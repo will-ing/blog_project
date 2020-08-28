@@ -8,7 +8,7 @@
 <h1>Blog list</h1>
 <ul>
     {% for blog in object_list %}
-    <li><a href="{% url 'home' blog.id %}">{{ blog.title }}</a></li>
+    <li><a href="{% url 'detail' blog.id %}">{{blog.title}}</a></li>
     {% endfor %}
 </ul>
 {% endblock content %}
