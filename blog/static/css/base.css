@@ -17,7 +17,9 @@ body header{
 
 body main h3{
     display: flex;
-    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1em;
 }
 
 body main ul{
@@ -31,10 +33,24 @@ body main ul{
 body main ul li{
     list-style-type: none;
     font-size: 5em;
+    margin: .8rem;
 
 }
 
-body main ul li a:hover{
-    color: darkolivegreen;
+
+body main ul li a:link{
+    color: blue;
     transform: scale(2, 2);
+}
+
+body main ul li a:visited{
+    color: goldenrod;
+}
+
+body main ul li a:hover, body main h3:hover{
+    color: darkolivegreen;
+}
+
+body main ul li:hover, body main h3:hover{
+    transform: scale(1.1);
 }
