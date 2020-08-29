@@ -9,4 +9,7 @@
 <p>{{ blog.author }}</p>
 <p>{{ blog.body }}</p>
 
+<a href="{% url 'update' blog.id %}">Edit Blog</a>
+<a href="{% url 'delete' blog.id %}">Delete Blog</a>
+
 {% endblock content %}

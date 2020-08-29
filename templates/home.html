@@ -9,6 +9,7 @@
     <h1>Blog list</h1>
 </header>
 <main>
+    <h3><a href="{% url 'create' %}">Add New Blog</a></h3>
     <ul>
         {% for blog in object_list %}
         <li><a href="{% url 'detail' blog.id %}">{{blog.title}}</a></li>
