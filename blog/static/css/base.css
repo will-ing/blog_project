@@ -15,15 +15,23 @@ body header{
     font-size: 5em;
 }
 
+body main h3{
+    display: flex;
+    justify-items: center;
+}
+
 body main ul{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
+    margin: 10px;
 }
+
 
 body main ul li{
     list-style-type: none;
     font-size: 5em;
+
 }
 
 body main ul li a:hover{
